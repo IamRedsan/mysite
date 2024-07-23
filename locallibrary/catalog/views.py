@@ -49,3 +49,6 @@ class BookDetailView(generic.DetailView):
         book = get_object_or_404(Book, pk=primary_key)
 
         return render(request, "catalog/book_detail.html", context={"book": book})
+
+class LoanedBooksByUserListView(generic.ListView):
+    pass
