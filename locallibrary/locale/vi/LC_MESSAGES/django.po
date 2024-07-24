@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-24 14:29+0700\n"
+"POT-Creation-Date: 2024-07-24 20:46+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,142 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: .\catalog\models.py:10
-msgid "Enter the book genre (e.g: SF, Romantic,...)"
+
+#: .\catalog\models.py:11
+#, fuzzy
+#| msgid "Enter the book genre (e.g: SF, Romantic,...)"
+msgid "Enter the book genre (e.g: SF, Romantic,...) "
 msgstr "Nhập thể loại sách (ví dụ: Khoa học viễn tưởng, Lãng mạn,...)"
 
-#: .\catalog\models.py:18
+#: .\catalog\models.py:19
 msgid "Enter the title of the book"
 msgstr "Nhập tiêu đề của sách"
 
-#: .\catalog\models.py:23
+#: .\catalog\models.py:24
 msgid "Select the author of the book"
 msgstr "Chọn tác giả của sách"
 
-#: .\catalog\models.py:26
+#: .\catalog\models.py:27
 msgid "Enter a brief description of the book"
 msgstr "Nhập mô tả ngắn gọn về sách"
 
-#: .\catalog\models.py:33
+#: .\catalog\models.py:34
 msgid ""
 "Enter the 13-character ISBN number of the book. See <a href=\"https://www."
 "isbn-international.org/content/what-isbn\">ISBN information</a> for more "
 "details."
 msgstr ""
-"Nhập số ISBN gồm 13 ký tự của sách. Xem <a href=\"https://www."
-"isbn-international.org/content/what-isbn\">thông tin ISBN</a> để biết thêm "
-"chi tiết."
+"Nhập số ISBN gồm 13 ký tự của sách. Xem <a href=\"https://www.isbn-"
+"international.org/content/what-isbn\">thông tin ISBN</a> để biết thêm chi "
+"tiết."
 
-#: .\catalog\models.py:37
+#: .\catalog\models.py:38
 msgid "Select one or more genres for this book"
 msgstr "Chọn một hoặc nhiều thể loại cho sách này"
 
-#: .\catalog\models.py:49
+#: .\catalog\models.py:50
 msgid "Genre"
 msgstr "Thể loại"
 
-#: .\catalog\models.py:56
+#: .\catalog\models.py:57
 msgid "Unique ID for this particular book across the whole library"
 msgstr "Mã ID duy nhất cho cuốn sách này trong toàn thư viện"
 
-#: .\catalog\models.py:61
+#: .\catalog\models.py:62
 msgid "Select the book for this instance"
 msgstr "Chọn sách cho trường hợp này"
 
-#: .\catalog\models.py:66
+#: .\catalog\models.py:67
 msgid "Enter the imprint information (e.g., publisher, publication date)"
 msgstr "Nhập thông tin in ấn (ví dụ: nhà xuất bản, ngày xuất bản)"
 
-#: .\catalog\models.py:72
+#: .\catalog\models.py:73
 msgid "Enter the date when the book is due to be returned"
 msgstr "Nhập ngày khi sách cần được trả lại"
 
-#: .\catalog\models.py:75
-msgid "Maintenance"
-msgstr "Bảo trì"
-
-#: .\catalog\models.py:76
-msgid "On loan"
-msgstr "Đang mượn"
-
-#: .\catalog\models.py:77
-msgid "Available"
-msgstr "Có sẵn"
-
-#: .\catalog\models.py:78
-msgid "Reserved"
-msgstr "Đã đặt trước"
-
-#: .\catalog\models.py:85
+#: .\catalog\models.py:80
 msgid "Select the current status of the book"
 msgstr "Chọn trạng thái hiện tại của sách"
 
-#: .\catalog\models.py:97
+#: .\catalog\models.py:92
 msgid "Enter the author's first name"
 msgstr "Nhập tên riêng của tác giả"
 
-#: .\catalog\models.py:100
+#: .\catalog\models.py:95
 msgid "Enter the author's last name"
 msgstr "Nhập họ của tác giả"
 
-#: .\catalog\models.py:103
+#: .\catalog\models.py:98
 msgid "Enter the author's date of birth"
 msgstr "Nhập ngày sinh của tác giả"
 
-#: .\catalog\models.py:106
+#: .\catalog\models.py:101
 msgid "Died"
 msgstr "Qua đời"
 
-#: .\catalog\models.py:109
+#: .\catalog\models.py:104
 msgid "Enter the author's date of death, if applicable"
 msgstr "Nhập ngày mất của tác giả, nếu có"
+
+#: .\catalog\templates\base_generic.html:5
+msgid "Local Library"
+msgstr "Thư viện địa phương"
+
+#: .\catalog\templates\base_generic.html:26
+msgid "Home"
+msgstr "Trang chủ"
+
+#: .\catalog\templates\base_generic.html:27
+msgid "All books"
+msgstr "Tất cả sách"
+
+#: .\catalog\templates\base_generic.html:28
+msgid "All authors"
+msgstr "Tất cả tác giả"
+
+#: .\catalog\templates\index.html:4
+msgid "Local Library Home"
+msgstr "Trang chủ thư viện địa phương"
+
+#: .\catalog\templates\index.html:6
+msgid "Welcome to LocalLibrary, a website developed by"
+msgstr "Chào mừng đến với thư viện, trang web này được phát triển bởi"
+
+#: .\catalog\templates\index.html:7
+msgid "Mozilla Developer Network"
+msgstr "Mozilla Developer Network"
+
+#: .\catalog\templates\index.html:9
+msgid "Dynamic content"
+msgstr "Nội dung động"
+
+#: .\catalog\templates\index.html:10
+msgid "The library has the following record counts:"
+msgstr "Thư viện có số lượng bản ghi sau:"
+
+#: .\catalog\templates\index.html:12
+msgid "Books:"
+msgstr "Sách"
+
+#: .\catalog\templates\index.html:13
+msgid "Copies:"
+msgstr "Bản sao"
+
+#: .\catalog\templates\index.html:14
+#, fuzzy
+#| msgid "Available"
+msgid "Copies available:"
+msgstr "Có sẵn"
+
+#: .\catalog\templates\index.html:15
+msgid "Authors:"
+msgstr ""
+
+#~ msgid "Maintenance"
+#~ msgstr "Bảo trì"
+
+#~ msgid "On loan"
+#~ msgstr "Đang mượn"
+
+#~ msgid "Reserved"
+#~ msgstr "Đã đặt trước"

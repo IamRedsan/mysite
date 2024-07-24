@@ -1,14 +1,16 @@
+from typing import Iterable
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
-from .constants import LOAN_STATUS
+from .constants import LoanStatus
+from django.core.exceptions import ValidationError
 import uuid
 
 
 # Create your models here.
 class Genre(models.Model):
     name = models.CharField(
-        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...)")
+        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...) ")
     )
 
     def __str__(self) -> str:
@@ -74,7 +76,7 @@ class BookInstance(models.Model):
     )
     status = models.CharField(
         max_length=1,
-        choices=LOAN_STATUS,
+        choices=LoanStatus.choices(),
         blank=True,
         default="m",
         help_text=_("Select the current status of the book"),
@@ -107,6 +109,16 @@ class Author(models.Model):
     class Meta:
         ordering = ["last_name", "first_name"]
 
+    def clean(self):
+        if self.date_of_birth and self.date_of_death:
+            if self.date_of_death <= self.date_of_birth:
+                raise ValidationError(_("Date of death must be after date of birth."))
+    
+    def save(self, *args, **kwargs):
+        self.clean()
+        super().save(*args, **kwargs)
+
+    
     def get_absolute_url(self):
         return reverse("author-detail", args=[str(self.id)])
 
