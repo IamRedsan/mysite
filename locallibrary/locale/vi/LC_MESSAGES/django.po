@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-24 14:29+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\catalog\models.py:10
+msgid "Enter the book genre (e.g: SF, Romantic,...)"
+msgstr "Nhập thể loại sách (ví dụ: Khoa học viễn tưởng, Lãng mạn,...)"
+
+#: .\catalog\models.py:18
+msgid "Enter the title of the book"
+msgstr "Nhập tiêu đề của sách"
+
+#: .\catalog\models.py:23
+msgid "Select the author of the book"
+msgstr "Chọn tác giả của sách"
+
+#: .\catalog\models.py:26
+msgid "Enter a brief description of the book"
+msgstr "Nhập mô tả ngắn gọn về sách"
+
+#: .\catalog\models.py:33
+msgid ""
+"Enter the 13-character ISBN number of the book. See <a href=\"https://www."
+"isbn-international.org/content/what-isbn\">ISBN information</a> for more "
+"details."
+msgstr ""
+"Nhập số ISBN gồm 13 ký tự của sách. Xem <a href=\"https://www."
+"isbn-international.org/content/what-isbn\">thông tin ISBN</a> để biết thêm "
+"chi tiết."
+
+#: .\catalog\models.py:37
+msgid "Select one or more genres for this book"
+msgstr "Chọn một hoặc nhiều thể loại cho sách này"
+
+#: .\catalog\models.py:49
+msgid "Genre"
+msgstr "Thể loại"
+
+#: .\catalog\models.py:56
+msgid "Unique ID for this particular book across the whole library"
+msgstr "Mã ID duy nhất cho cuốn sách này trong toàn thư viện"
+
+#: .\catalog\models.py:61
+msgid "Select the book for this instance"
+msgstr "Chọn sách cho trường hợp này"
+
+#: .\catalog\models.py:66
+msgid "Enter the imprint information (e.g., publisher, publication date)"
+msgstr "Nhập thông tin in ấn (ví dụ: nhà xuất bản, ngày xuất bản)"
+
+#: .\catalog\models.py:72
+msgid "Enter the date when the book is due to be returned"
+msgstr "Nhập ngày khi sách cần được trả lại"
+
+#: .\catalog\models.py:75
+msgid "Maintenance"
+msgstr "Bảo trì"
+
+#: .\catalog\models.py:76
+msgid "On loan"
+msgstr "Đang mượn"
+
+#: .\catalog\models.py:77
+msgid "Available"
+msgstr "Có sẵn"
+
+#: .\catalog\models.py:78
+msgid "Reserved"
+msgstr "Đã đặt trước"
+
+#: .\catalog\models.py:85
+msgid "Select the current status of the book"
+msgstr "Chọn trạng thái hiện tại của sách"
+
+#: .\catalog\models.py:97
+msgid "Enter the author's first name"
+msgstr "Nhập tên riêng của tác giả"
+
+#: .\catalog\models.py:100
+msgid "Enter the author's last name"
+msgstr "Nhập họ của tác giả"
+
+#: .\catalog\models.py:103
+msgid "Enter the author's date of birth"
+msgstr "Nhập ngày sinh của tác giả"
+
+#: .\catalog\models.py:106
+msgid "Died"
+msgstr "Qua đời"
+
+#: .\catalog\models.py:109
+msgid "Enter the author's date of death, if applicable"
+msgstr "Nhập ngày mất của tác giả, nếu có"
