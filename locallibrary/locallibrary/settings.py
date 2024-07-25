@@ -124,7 +124,7 @@ LANGUAGES = [
     ("vi", "Vietnamese"),
 ]
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "vi"
 
 LOCALE_PATHS = [
     BASE_DIR / "locale",
