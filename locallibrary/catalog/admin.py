@@ -6,9 +6,7 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display = ("first_name", "last_name", "date_of_birth", "date_of_death")
     fields = ["first_name", "last_name", ("date_of_birth", "date_of_death")]
 
-
 admin.site.register(Author, AuthorAdmin)
-
 
 class BookInstanceInline(admin.TabularInline):
     model = BookInstance

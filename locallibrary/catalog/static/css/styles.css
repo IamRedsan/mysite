@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+.copies-container{
+  margin-left: 20px; 
+  margin-top: 20px;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
