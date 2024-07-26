@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-25 15:28+0700\n"
+"POT-Creation-Date: 2024-07-26 08:53+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: .\catalog\models.py:13
-msgid "Enter the book genre (e.g: SF, Romantic,...) "
+#, fuzzy
+#| msgid "Enter the book genre (e.g: SF, Romantic,...) "
+msgid "Enter the book genre (e.g: SF, Romantic,...)"
 msgstr "Nhập thể loại sách (ví dụ: Khoa học viễn tưởng, Lãng mạn,...)"
 
 #: .\catalog\models.py:21
@@ -100,67 +102,67 @@ msgstr "Ngày mất phải sau ngày sinh."
 msgid "Local Library"
 msgstr "Thư viện địa phương"
 
-#: .\catalog\templates\base_generic.html:26
+#: .\catalog\templates\base_generic.html:25
 msgid "Home"
 msgstr "Trang chủ"
 
-#: .\catalog\templates\base_generic.html:27
+#: .\catalog\templates\base_generic.html:26
 msgid "All books"
 msgstr "Tất cả sách"
 
-#: .\catalog\templates\base_generic.html:28
+#: .\catalog\templates\base_generic.html:27
 msgid "All authors"
 msgstr "Tất cả tác giả"
 
-#: .\catalog\templates\base_generic.html:40
+#: .\catalog\templates\base_generic.html:39
 msgid "previous"
 msgstr "trước"
 
-#: .\catalog\templates\base_generic.html:44
+#: .\catalog\templates\base_generic.html:43
 msgid "Page"
 msgstr "Trang"
 
-#: .\catalog\templates\base_generic.html:44
+#: .\catalog\templates\base_generic.html:43
 msgid "of"
 msgstr "trong"
 
-#: .\catalog\templates\base_generic.html:48
+#: .\catalog\templates\base_generic.html:47
 msgid "next"
 msgstr "tiếp"
 
-#: .\catalog\templates\catalog\book_detail.html:2
+#: .\catalog\templates\catalog\book_detail.html:6
 msgid "Title"
 msgstr "Tiêu đề"
 
-#: .\catalog\templates\catalog\book_detail.html:3
+#: .\catalog\templates\catalog\book_detail.html:7
 msgid "Author:"
 msgstr "Tác giả:"
 
-#: .\catalog\templates\catalog\book_detail.html:4
+#: .\catalog\templates\catalog\book_detail.html:8
 msgid "Summary:"
 msgstr "Tóm tắt:"
 
-#: .\catalog\templates\catalog\book_detail.html:5
+#: .\catalog\templates\catalog\book_detail.html:9
 msgid "ISBN:"
 msgstr "Mã ISBN:"
 
-#: .\catalog\templates\catalog\book_detail.html:6
+#: .\catalog\templates\catalog\book_detail.html:10
 msgid "Genre:"
 msgstr "Thể loại:"
 
-#: .\catalog\templates\catalog\book_detail.html:8
+#: .\catalog\templates\catalog\book_detail.html:12
 msgid "Copies"
 msgstr "Bản sao:"
 
-#: .\catalog\templates\catalog\book_detail.html:17
+#: .\catalog\templates\catalog\book_detail.html:21
 msgid "Due to be returned:"
 msgstr "Hạn phải trả lại:"
 
-#: .\catalog\templates\catalog\book_detail.html:19
+#: .\catalog\templates\catalog\book_detail.html:23
 msgid "Imprint:"
 msgstr "Nhà xuất bản:"
 
-#: .\catalog\templates\catalog\book_detail.html:20
+#: .\catalog\templates\catalog\book_detail.html:24
 msgid "Id:"
 msgstr "Id:"
 
@@ -207,3 +209,19 @@ msgstr "Bản sao có sẵn:"
 #: .\catalog\templates\index.html:16
 msgid "Authors:"
 msgstr "Tác giả:"
+
+#: .\catalog\templates\index.html:19
+#, python-format
+msgid ""
+"\n"
+"    You have visited this page %(num_visits)s time.\n"
+"  "
+msgid_plural ""
+"\n"
+"    You have visited this page %(num_visits)s times.\n"
+"  "
+msgstr[0] ""
+"\n"
+"    Bạn đã truy cập trang này %(num_visits)s lần.\n"
+"  "
+

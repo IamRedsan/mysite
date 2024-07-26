@@ -10,7 +10,7 @@ import uuid
 # Create your models here.
 class Genre(models.Model):
     name = models.CharField(
-        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...) ")
+        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...)")
     )
 
     def __str__(self) -> str:
