@@ -1,9 +1,9 @@
 from django.db.models.query import QuerySet
 from django.shortcuts import render, get_object_or_404
 from .models import Book, BookInstance, Author, Genre
-from .constants import LoanStatus, ITEMS_PER_PAGE_BOOKLIST
+from .constants import LoanStatus, ITEMS_PER_PAGE_BOOKLIST, ITEMS_PER_PAGE_COPIES
 from django.views import generic
-
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 def index(request):
     num_books = Book.objects.count()
@@ -52,3 +52,17 @@ class BookDetailView(generic.DetailView):
         context["LoanStatus"] = LoanStatus.__members__
         return context
 
+class LoanedBooksByUserListView(LoginRequiredMixin,generic.ListView):
+    model = BookInstance
+    paginate_by = ITEMS_PER_PAGE_COPIES
+    template_name = "catalog/bookinstance_list_borrowed_user.html"
+    context_object_name = "bookinstance_list"
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .select_related("book")
+            .filter(borrower=self.request.user)
+            .filter(status__exact= LoanStatus.ON_LOAN.value)
+            .order_by("due_back"))
+    
