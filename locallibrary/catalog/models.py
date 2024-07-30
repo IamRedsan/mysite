@@ -11,7 +11,7 @@ import uuid
 # Create your models here.
 class Genre(models.Model):
     name = models.CharField(
-        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...) ")
+        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...)")
     )
 
     def __str__(self) -> str:
@@ -94,13 +94,13 @@ class BookInstance(models.Model):
 
 class Author(models.Model):
     first_name = models.CharField(
-        max_length=100, help_text=_("Enter the author's first name")
+        _("Firstname"),max_length=100, help_text=_("Enter the author's first name")
     )
     last_name = models.CharField(
-        max_length=100, help_text=_("Enter the author's last name")
+        _("Lastname"),max_length=100, help_text=_("Enter the author's last name")
     )
     date_of_birth = models.DateField(
-        null=True, blank=True, help_text=_("Enter the author's date of birth")
+        _("Date of birth"),null=True, blank=True, help_text=_("Enter the author's date of birth")
     )
     date_of_death = models.DateField(
         _("Died"),

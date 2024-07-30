@@ -127,7 +127,7 @@ LANGUAGES = [
 LANGUAGE_CODE = "vi"
 
 LOCALE_PATHS = [
-    BASE_DIR / "locale",
+    os.path.join(BASE_DIR, "locale"),
 ]
 
 # Static files (CSS, JavaScript, Images)
