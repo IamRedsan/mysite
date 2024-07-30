@@ -11,4 +11,5 @@ class LoanStatus(Enum):
         return [(key.value, key.name.capitalize()) for key in cls]
 
 ITEMS_PER_PAGE_BOOKLIST =2
+ITEMS_PER_PAGE_COPIES =2
 

@@ -2,6 +2,7 @@ from typing import Iterable
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.models import User
 from .constants import LoanStatus
 from django.core.exceptions import ValidationError
 import uuid
@@ -10,7 +11,7 @@ import uuid
 # Create your models here.
 class Genre(models.Model):
     name = models.CharField(
-        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...)")
+        max_length=200, help_text=_("Enter the book genre (e.g: SF, Romantic,...) ")
     )
 
     def __str__(self) -> str:
@@ -81,6 +82,8 @@ class BookInstance(models.Model):
         default="m",
         help_text=_("Select the current status of the book"),
     )
+    
+    borrower = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
     class Meta:
         ordering = ["due_back"]
