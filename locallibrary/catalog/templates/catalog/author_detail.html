@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+{% block content %}
+<p><strong>{% trans "Firstname"%}:</strong> {{ author.first_name }}</p>
+<p><strong>{% trans "Lastname"%}:</strong> {{ author.last_name }}</p>
+<p><strong>{% trans "Date of birth"%}:</strong> {{ author.date_of_birth }}</p>
+<p><strong>{% trans "Date of death"%}:</strong> {{ author.date_of_death }}</p>
+{% if user.is_staff %}
+<div>
+    <a href="{% url 'author-delete' author.pk %}" class="button">{% trans "DELETE" %}</a>
+    <a href="{% url 'author-update' author.pk %}" class="button">{% trans "UPDATE" %}</a>
+</div>
+{% endif %}
+{% endblock %}

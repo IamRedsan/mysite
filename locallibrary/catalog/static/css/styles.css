@@ -9,6 +9,16 @@
   margin-top: 20px;
 }
 
+.author-create-link {
+  margin-bottom: 20px !important; 
+  margin-top: 20px !important;
+  text-decoration: none;
+}
+
+.author-create-link:hover {
+  text-decoration: none;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -9492,4 +9502,4 @@ a.text-dark:hover {
     border-color: #dee2e6;
   }
 }
-/*# sourceMappingURL=bootstrap.min.css.map */
+
