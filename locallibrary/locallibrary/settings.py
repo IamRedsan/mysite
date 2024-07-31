@@ -124,7 +124,7 @@ LANGUAGES = [
     ("vi", "Vietnamese"),
 ]
 
-LANGUAGE_CODE = "vi"
+LANGUAGE_CODE = "en"
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, "locale"),

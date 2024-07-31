@@ -36,15 +36,15 @@ msgstr "Ngày gia hạn"
 
 #: .\catalog\forms.py:49
 msgid "Required. Enter a valid email address."
-msgstr ""
+msgstr "Nhập địa chỉ email hợp lệ."
 
 #: .\catalog\forms.py:58
 msgid "The email address is already in use."
-msgstr ""
+msgstr "Các địa chỉ email đã được sử dụng."
 
 #: .\catalog\forms.py:64
 msgid "The username is already taken."
-msgstr ""
+msgstr "Tên người dùng đã được sử dụng."
 
 #: .\catalog\models.py:14
 #, fuzzy
